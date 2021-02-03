@@ -2,7 +2,7 @@
   "name": "vue-awesome-demos",
   "version": "4.4.0",
   "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "author": "Yuan <yuanxing1989@126.com>",
   "useEslint": false,
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -25,7 +25,14 @@
     "path-to-regexp": "2.4.0",
     "vue": "2.6.10",
     "vue-router": "3.0.6",
-    "vuex": "3.1.0"
+    "fabric": "^4.2.0",
+    "qrcodejs2": "^0.0.2",
+    "vue-quill-editor": "^3.0.6",
+    "d3": "^6.3.0",
+    "dagre-d3": "^0.6.4",
+    "@antv/g6": "^3.7.3",
+    "vuex": "3.1.0",
+    "vuedraggable": "^2.24.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.4.4",

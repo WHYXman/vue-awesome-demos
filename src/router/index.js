@@ -5,7 +5,11 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
-
+import barCode from '../views/barCode' 
+import richText from '../views/richText' 
+// import form from '../views/form' 
+import dataView from '../views/dataView' 
+import jsonConstrucor from '../views/json-construcor' 
 /**
  * Note: sub-menu only appear when route children.length >= 1
  * Detail see: https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
@@ -36,35 +40,26 @@ export const constantRoutes = [
     component: () => import('@/views/login/index'),
     hidden: true
   },
-
   {
     path: '/404',
     component: () => import('@/views/404'),
     hidden: true
   },
-
   {
     path: '/',
     component: Layout,
-    redirect: '/dashboard',
+    redirect: '/tree-select',
     children: [{
-      path: 'dashboard',
-      name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
-    }]
-  },
-  {
-    path: '/tree-select',
-    component: Layout,
-    redirect: '/main',
-    children: [{
-      path: 'main',
+      path: 'tree-select',
       name: 'tree-select',
       component: () => import('@/views/tree-select'),
-      meta: { title: '新vue-treeselect示例', icon: 'dashboard' }
+      meta: { title: '新vue-treeselect示例', icon: '' }
     }]
   },
+  barCode,
+  richText,
+  dataView,
+  jsonConstrucor,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

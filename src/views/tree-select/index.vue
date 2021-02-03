@@ -42,7 +42,7 @@
           </el-col>
           <el-col :span="16">
               <h4>You are using flat mode. But you forgot to add "multiple=true"的解决方案</h4>
-              <a target="_blank" href="https://www.jianshu.com/p/6d20834352be">vue-treeselect 爬坑之路</a>
+              <a style="color:#005533" target="_blank" href="https://www.jianshu.com/p/6d20834352be">vue-treeselect 爬坑之路</a>
           </el-col>
         </el-row>
     </div>
