@@ -44,7 +44,8 @@ module.exports = {
     name: name,
     resolve: {
       alias: {
-        '@': resolve('src')
+        '@': resolve('src'),
+        '~editor': resolve('src/components/G6Editor'),
       }
     }
   },

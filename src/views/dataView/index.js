@@ -31,6 +31,14 @@ const main = {
             meta: {title: 'g6示例', icon: '',bgcolor:'#EF7F62'},
             menu: ''
         },
+        {
+            path: 'g6-editor',
+            hidden:false,
+            name: 'g6-editor',
+            component: () => import('@/views/dataView/page/g6-editor'),
+            meta: {title: 'g6-editor示例', icon: '',bgcolor:'#EF7F62'},
+            menu: ''
+        },
     ]
 }
 export default main;
