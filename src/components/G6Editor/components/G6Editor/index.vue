@@ -1,5 +1,5 @@
 <template>
-  <div id="mountNode" :style="{width:width}">
+  <div id="mountNode">
     <div class="editor" >
       <context-menu />
       <!--toolbar-->

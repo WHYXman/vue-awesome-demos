@@ -131,22 +131,20 @@ export default {
   },
   methods: {
     handleDragstart(e) {
-      this.offsetX = e.offsetX;
-      this.offsetY = e.offsetY;
+      // this.offsetX = e.offsetX;
+      // this.offsetY = e.offsetY;
     },
     handleDragEnd(e, item) {
       let data = {};
       Object.assign(data, item);
-      data.offsetX = this.offsetX;
-      data.offsetY = this.offsetY;
+    
       if (this.page) {
         const graph = this.page.graph;
         // const size = e.target.dataset.size.split("*");
-        const xy = graph.getPointByClient(e.x, e.y);
+        const xy = graph.getPointByClient(e.x, e.y);//xy是画布中的x，y坐标
         data.x = xy.x;
         data.y = xy.y;
         data.size = item.size.split("*");
-        data.type = "node";
         this.command.executeCommand("add", [data]);
       }
     },

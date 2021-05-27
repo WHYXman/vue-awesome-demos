@@ -1,8 +1,8 @@
 import { uniqueId } from '~editor/utils'
 class command {
     editor = null;
-    undoList = []
-    redoList = []
+    undoList = []//撤销
+    redoList = []//恢复
     constructor(editor) {
         this.editor = editor;
     }

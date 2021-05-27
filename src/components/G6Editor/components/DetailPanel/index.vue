@@ -7,11 +7,11 @@
           <el-row :gutter="10">
             <el-col :span="8">名称</el-col>
             <el-col :span="16">
-              <el-input v-model="node.label" @change="handleChangeName" />
+              <el-input size="mini" v-model="node.label" @change="handleChangeName" />
             </el-col>
             <el-col :span="8">任意属性</el-col>
             <el-col :span="16">
-              <el-input v-model="node.xxx" />
+              <el-input size="mini" v-model="node.xxx" />
             </el-col>
           </el-row>
         </div>
@@ -19,7 +19,7 @@
       <div v-if="status==='canvas-selected'" class="pannel" id="canvas_detailpannel">
         <div class="pannel-title">画布</div>
         <div class="block-container">
-          <el-checkbox v-model="showGrid" @change="changeGridState">网格对齐</el-checkbox>
+          <el-checkbox size="mini" v-model="showGrid" @change="changeGridState">网格对齐</el-checkbox>
         </div>
       </div>
       <!-- <div v-if="status==='group-selected'" class="pannel" id="node_detailpannel">
@@ -110,6 +110,7 @@ export default {
 }
 .detailpannel .block-container {
   padding: 16px 8px;
+  font-size: 12px;
 }
 .block-container .el-col {
   height: 28px;

@@ -10,6 +10,7 @@ import richText from '../views/richText'
 // import form from '../views/form' 
 import dataView from '../views/dataView' 
 import jsonConstrucor from '../views/json-construcor' 
+import pdf from '../views/pdf' 
 /**
  * Note: sub-menu only appear when route children.length >= 1
  * Detail see: https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
@@ -60,6 +61,7 @@ export const constantRoutes = [
   richText,
   dataView,
   jsonConstrucor,
+  pdf,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

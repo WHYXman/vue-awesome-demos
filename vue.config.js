@@ -47,7 +47,8 @@ module.exports = {
         '@': resolve('src'),
         '~editor': resolve('src/components/G6Editor'),
       }
-    }
+    },
+    devtool: process.env.NODE_ENV === 'production' ? false : 'source-map'
   },
   chainWebpack(config) {
     // it can improve the speed of the first screen, it is recommended to turn on preload

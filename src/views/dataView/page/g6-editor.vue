@@ -1,11 +1,9 @@
 <template>
-    <G6Editor mode="edit">
-
-    </G6Editor>
+    <G6Editor mode="edit"></G6Editor>
 </template>
 
 <script>
-import G6Editor from '@/components/G6Editor/components/G6Editor'
+import G6Editor from '~editor/components/G6Editor'
 export default {
     props: {
 
