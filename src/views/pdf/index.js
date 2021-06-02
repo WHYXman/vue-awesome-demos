@@ -2,17 +2,17 @@ import Layout from '@/layout'
 
 const barCode = {
     path: '/pdf',
-    redirect: '/pdf/preview',
+    redirect: '/pdf/object',
     component: Layout,
-    name: 'barCode',
-    meta: {title: 'pdf',routerShow: true,},
+    name: 'pdf',
+    meta: {title: 'pdf预览',routerShow: true,},
     children: [
         {
-            path: 'preview',
+            path: 'object',
             hidden:false,
-            name: 'preview',
-            component: () => import('@/views/pdf/page/preview'),
-            meta: {title: 'pdf预览', icon: '',bgcolor:'#EF7F62'},
+            name: 'object',
+            component: () => import('@/views/pdf/page/pdf-object'),
+            meta: {title: 'pdf-object', icon: '',bgcolor:'#EF7F62'},
             menu: ''
         },
     ]

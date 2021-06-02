@@ -26,6 +26,7 @@
     "@antv/g6": "3.0.5-beta.9",
     "@riophae/vue-treeselect": "^0.4.0",
     "axios": "0.18.1",
+    "babel-polyfill": "^6.26.0",
     "core-js": "3.6.5",
     "d3": "^6.3.0",
     "dagre-d3": "^0.6.4",
